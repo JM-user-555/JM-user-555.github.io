@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -14,12 +15,39 @@
         </div>
     </header>
 
+    <section class="about-me"></section>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a Mechatronics graduate currently pursuing further studies in Computer and Communication Engineering. 
+                Currently, I am passionate about 
+                sharing knowledge as I teach coding courses, helping others develop their programming abilities. My expertise extends 
+                to web development, where I've worked on various projects, and I have also explored the fields of Machine Learning and 
+                Artificial Intelligence, completing a few projects in these areas. I am driven by a curiosity for technology and a 
+                desire to continuously grow and innovate in my field.
+                My expertise includes C#, Embedded Systems, AI, Machine Learning, and Web Development using modern technologies like React.js.
+            </p>
+            <div class="social-links">
+                <a href="https://www.github.com/JM-user-555/" target="_blank" class="contact-button">GitHub Profile <img src="github-brands-solid.svg"></a>
+                <a href="https://www.linkedin.com/in/jad-mattar-98a8092a6" target="_blank" class="linkedin-link">LinkedIn Profile <img src="linkedin-brands-solid.svg"></a>
+                <button class="contact-button" onclick="openModal()">Contact Me <img src="circle-info-solid.svg"></button>
+            </div>
+            <div id="contactModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>Contact Information</h2>
+                    <p>Email: jadmattar4@gmail.com</p>
+                    <p>Phone: +961 76 433738</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="projects-section">
         <div class="container">
             <h2>Projects</h2>
             <div class="project-list">
                 <div class="project-item">
-                    <a href="Projects/quiz_react_project.html">
+                    <a href="Projects/calculator_react_project.html">
                     <h3>Web Development</h3>
                     <p>Built projects using HTML, CSS, JavaScript, and React.js</p>
                     </a>
@@ -32,7 +60,7 @@
                 </div>
                 <div class="project-item">
                     <a href="Projects/csharp_game_project.html">
-                    <h3>C# Project</h3>
+                    <h3>C# Projects</h3>
                     <p>Learned OOP concepts and implemented in 2D game development</p>
                     </a>
                 </div>
@@ -83,5 +111,25 @@
             <p>&copy; 2024 My Portfolio | All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Open modal
+        function openModal() {
+            document.getElementById('contactModal').style.display = 'block';
+        }
+
+        // Close modal
+        function closeModal() {
+            document.getElementById('contactModal').style.display = 'none';
+        }
+
+        // Close the modal when clicking outside of it
+        window.onclick = function(event) {
+            var modal = document.getElementById('contactModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
