@@ -1,0 +1,38 @@
+/* Existing styles remain the same */
+
+/* Project details page styles */
+.project-details {
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.project-details h2 {
+    text-align: left;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.project-details p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 2rem;
+}
