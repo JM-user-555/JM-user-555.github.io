@@ -216,3 +216,17 @@ a{
     position: relative;
     top: 4px;
 }
+.download-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #0077b5;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease;
+}
+.download-button:hover{
+    background-color: #005983;
+}
