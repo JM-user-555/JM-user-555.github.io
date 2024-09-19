@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -64,7 +65,7 @@ h2 {
     margin-bottom: 0.5rem;
     color: #333;
 }
-.project-item p{
+.project-item p {
     color: #333;
 }
 
@@ -123,11 +124,15 @@ a{
     display: inline-block;
     margin: 0 1rem;
     padding: 0.8rem 1.5rem;
+    width: 200px;
     border-radius: 50px;
     text-decoration: none;
     font-size: 1.1rem;
     color: white;
     transition: background-color 0.3s ease;
+}
+.social-links button{
+    width: 200px;
 }
 
 .linkedin-link {
@@ -211,11 +216,13 @@ a{
     color: #000;
     cursor: pointer;
 }
-.social-links img{
+
+.social-links img {
     width: 20px;
     position: relative;
     top: 4px;
 }
+
 .download-button {
     display: inline-block;
     padding: 0.8rem 1.5rem;
@@ -227,6 +234,45 @@ a{
     margin-right: 1rem;
     transition: background-color 0.3s ease;
 }
-.download-button:hover{
+
+.download-button:hover {
     background-color: #005983;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-me h2 {
+        font-size: 2rem;
+    }
+
+    .about-me p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item {
+        width: 90%;
+    }
+
+    .social-links a {
+        margin: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
 }
